@@ -20,26 +20,10 @@
       "static/chunks/517-b1b7fca6e33934b4.js",
       "static/chunks/main-app-301229526e06f394.js",
       "static/css/d498c84e4ab246b3.css",
-      "static/css/26ab2a751997fce6.css",
+      "static/css/3f3667d379a28c1f.css",
       "static/chunks/970-e5e62f9daf9540d9.js",
       "static/chunks/173-d46e9090a0f350db.js",
-      "static/chunks/app/layout-b4d76be3372cc998.js"
-    ],
-    "/(pages)/about/page": [
-      "static/chunks/webpack-fa4279b35105e0f7.js",
-      "static/chunks/4bd1b696-dc53661a9e7a1ea0.js",
-      "static/chunks/517-b1b7fca6e33934b4.js",
-      "static/chunks/main-app-301229526e06f394.js",
-      "static/chunks/970-e5e62f9daf9540d9.js",
-      "static/chunks/173-d46e9090a0f350db.js",
-      "static/chunks/app/(pages)/about/page-a41225560f611e8a.js"
-    ],
-    "/(pages)/news/page": [
-      "static/chunks/webpack-fa4279b35105e0f7.js",
-      "static/chunks/4bd1b696-dc53661a9e7a1ea0.js",
-      "static/chunks/517-b1b7fca6e33934b4.js",
-      "static/chunks/main-app-301229526e06f394.js",
-      "static/chunks/app/(pages)/news/page-3732b19c5c4ba70d.js"
+      "static/chunks/app/layout-8bdf31b462404653.js"
     ],
     "/(pages)/detail/[id]/page": [
       "static/chunks/webpack-fa4279b35105e0f7.js",
@@ -65,6 +49,22 @@
       "static/chunks/main-app-301229526e06f394.js",
       "static/chunks/970-e5e62f9daf9540d9.js",
       "static/chunks/app/page-5b08f5e6b175e58e.js"
+    ],
+    "/(pages)/about/page": [
+      "static/chunks/webpack-fa4279b35105e0f7.js",
+      "static/chunks/4bd1b696-dc53661a9e7a1ea0.js",
+      "static/chunks/517-b1b7fca6e33934b4.js",
+      "static/chunks/main-app-301229526e06f394.js",
+      "static/chunks/970-e5e62f9daf9540d9.js",
+      "static/chunks/173-d46e9090a0f350db.js",
+      "static/chunks/app/(pages)/about/page-a41225560f611e8a.js"
+    ],
+    "/(pages)/news/page": [
+      "static/chunks/webpack-fa4279b35105e0f7.js",
+      "static/chunks/4bd1b696-dc53661a9e7a1ea0.js",
+      "static/chunks/517-b1b7fca6e33934b4.js",
+      "static/chunks/main-app-301229526e06f394.js",
+      "static/chunks/app/(pages)/news/page-3732b19c5c4ba70d.js"
     ]
   }
 }

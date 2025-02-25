@@ -1,7 +1,10 @@
 export const getListProduct = async () => {
   try {
     const response = await fetch(
-      "https://apistore.cybersoft.edu.vn/api/Product"
+      "https://apistore.cybersoft.edu.vn/api/Product",
+      {
+        next: { revalidate: 10 },
+      }
     );
 
     const data = await response.json();

@@ -1,12 +1,26 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import { useState } from "react";
 import Image from "next/image";
 
-
 export default function Header() {
+  const [keyword, setKeyword] = useState<string>("");
   const pathname = usePathname();
+  const router = useRouter();
+
+  // const handleOnChange = (e: any) => {
+  //   const keyword = e.target.value;
+  //   setKeyword(keyword);
+  // };
+
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    // redirect to search page
+    const url = `/search?keyword=${keyword}`;
+    router.push(url);
+  };
 
   return (
     <nav className="bg-white border-gray-200 dark:bg-gray-900">
@@ -24,6 +38,7 @@ export default function Header() {
             Flowbite
           </span>
         </a>
+
         <button
           data-collapse-toggle="navbar-default"
           type="button"
@@ -76,6 +91,38 @@ export default function Header() {
               </Link>
             </li>
           </ul>
+        </div>
+
+        <div className="relative hidden md:block">
+          <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+            <svg
+              className="w-4 h-4 text-gray-500 dark:text-gray-400"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 20 20"
+            >
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+              />
+            </svg>
+            <span className="sr-only">Search icon</span>
+          </div>
+          <form onSubmit={handleSubmit}>
+            <input
+              onChange={(e) => {
+                setKeyword(e.target.value);
+              }}
+              type="text"
+              id="search-navbar"
+              className="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Search..."
+            />
+          </form>
         </div>
       </div>
     </nav>
